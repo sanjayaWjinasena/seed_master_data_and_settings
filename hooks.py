@@ -278,8 +278,13 @@ def replicate_warehouses_to_all_companies(env):
                          'manufacture_steps'):
                 if step in tpl:
                     vals[step] = tpl[step]
+            # Savepoint: catch failures at the SQL layer so a bad
+            # create() doesn't poison the outer transaction. Without
+            # this the next Wh.search() throws InFailedSqlTransaction
+            # ("current transaction is aborted, commands ignored").
             try:
-                Wh.create(vals)
+                with env.cr.savepoint():
+                    Wh.create(vals)
                 created += 1
                 if created % 20 == 0:
                     _logger.info(
@@ -289,8 +294,7 @@ def replicate_warehouses_to_all_companies(env):
             except Exception as e:
                 # Odoo can refuse warehouse creation on companies with
                 # certain module states (e.g. no country + no default
-                # sequence). Log and continue — better to seed what we
-                # can than abort the whole loop.
+                # sequence). Savepoint rolled back — log and continue.
                 _logger.warning(
                     'seed_master_data_and_settings: failed to create '
                     'warehouse %s on company %s: %s',
