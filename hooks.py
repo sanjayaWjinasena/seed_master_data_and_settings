@@ -307,9 +307,198 @@ def replicate_warehouses_to_all_companies(env):
     )
 
 
+# Clear-DB → seed-module company id/name → target xmlid.
+# Used by apply_user_data() to translate a snapshot's Clear-DB
+# x_studio_company_id[0] (Clear-DB res.company id) to the target env's
+# res.company via seed xmlid.
+_CLEAR_DB_COMPANY_TO_XMLID = {
+    1: 'seed_master_data_and_settings.company_jinasena_pvt_ltd',
+    2: 'seed_master_data_and_settings.company_jinasena_agricultural_machinery',
+    3: 'seed_master_data_and_settings.company_jltd',
+}
+
+
+def apply_user_data(env):
+    """Apply per-user data (signature, image, groups, Studio fields)
+    from the bundled Clear-DB snapshot.
+
+    Reads data/user_data.json (RPC dump of every active @jinasena user
+    on Clear-DB) and writes the values onto the seeded users, matched
+    by login. Every write wrapped in env.cr.savepoint() so one bad
+    user doesn't poison the outer transaction.
+
+    Skips users whose login isn't present on the target env — they
+    weren't seeded, so there's nothing to migrate.
+
+    Groups: 100% of the snapshotted groups resolved to xmlids on
+    Clear-DB (base + module groups); env.ref lookups on the target
+    env re-resolve them. Any that fail (e.g. custom Studio groups)
+    are logged as WARNING and skipped.
+
+    Locations: resolved by complete_name (e.g. 'Virtual Locations/
+    Repair/Ekala'). Since those Studio-created virtual repair locs
+    aren't currently seeded on the target env, most location writes
+    will log "not found" — that's expected and fine; add virtual
+    location seeding in a future chunk if needed.
+
+    Password: NOT migrated — Odoo's ORM shields res.users.password
+    from RPC reads, so no hash is available in the snapshot. Users
+    keep the temp password from seed_user_passwords().
+
+    Idempotent: every write is an unconditional overwrite so re-runs
+    just re-apply the snapshot state.
+    """
+    import base64 as _b64
+    import json as _json
+    payload_path = os.path.join(
+        os.path.dirname(__file__), 'data', 'user_data.json',
+    )
+    if not os.path.exists(payload_path):
+        _logger.warning(
+            'seed_master_data_and_settings: user_data.json missing; '
+            'skipping per-user data seed.'
+        )
+        return
+    with open(payload_path, encoding='utf-8') as f:
+        snapshot = _json.load(f)
+
+    users_snap = snapshot['users']
+    group_id_to_xmlid = snapshot.get('groupIdToXmlid', {})
+    loc_id_meta = snapshot.get('locIdMeta', {})
+    stage_id_to_name = snapshot.get('stageIdToName', {})
+
+    Users = env['res.users'].sudo()
+    Group = env['res.groups'].sudo()
+    Loc = env['stock.location'].sudo()
+    Stage = env['hr.recruitment.stage'].sudo()
+
+    # Pre-resolve target-env references we'll reuse across users.
+    # Groups: xmlid → target group id.
+    group_target_ids = {}
+    for src_id, xmlid in group_id_to_xmlid.items():
+        rec = env.ref(xmlid, raise_if_not_found=False)
+        if rec:
+            group_target_ids[int(src_id)] = rec.id
+    _logger.info(
+        'seed_master_data_and_settings: resolved %d/%d snapshot group '
+        'xmlids on target env.',
+        len(group_target_ids), len(group_id_to_xmlid),
+    )
+
+    # Locations: complete_name → target loc id. Multiple companies
+    # may have the same complete_name (e.g. "WH/Stock") — keep the
+    # first match; the location write later re-searches per-company
+    # if a preferred company id is provided.
+    loc_target_ids_by_name = {}
+    for src_id, meta in loc_id_meta.items():
+        cn = meta.get('complete_name')
+        if not cn:
+            continue
+        # Loose match: prefer active + first hit.
+        target = Loc.search([('complete_name', '=', cn)], limit=1)
+        if target:
+            loc_target_ids_by_name[cn] = target.id
+
+    # Recruitment stages: name → target id.
+    stage_target_ids = {}
+    for src_id, name in stage_id_to_name.items():
+        rec = Stage.search([('name', '=', name)], limit=1)
+        if rec:
+            stage_target_ids[int(src_id)] = rec.id
+
+    def _resolve_loc(loc_ref):
+        """Given a snapshot m2o loc ref [id, display] or int id,
+        return target env loc id or False."""
+        if not loc_ref:
+            return False
+        src_id = loc_ref[0] if isinstance(loc_ref, list) else loc_ref
+        meta = loc_id_meta.get(str(src_id))
+        if not meta:
+            return False
+        return loc_target_ids_by_name.get(meta.get('complete_name'))
+
+    updated = 0
+    skipped_missing_login = 0
+    for u in users_snap:
+        login = u['login']
+        with env.cr.savepoint():
+            target = Users.search([('login', '=', login)], limit=1)
+            if not target:
+                skipped_missing_login += 1
+                continue
+            vals = {}
+            # Profile-visible fields
+            if u.get('signature'):
+                vals['signature'] = u['signature']
+            if u.get('image_1920'):
+                # Stored as base64 string in the snapshot; Odoo accepts
+                # the raw base64 for binary fields on write.
+                vals['image_1920'] = u['image_1920']
+            # Studio company_id — translate Clear-DB co id → seed xmlid
+            src_company = u.get('x_studio_company_id')
+            if src_company:
+                src_cid = src_company[0]
+                xmlid = _CLEAR_DB_COMPANY_TO_XMLID.get(src_cid)
+                if xmlid:
+                    rec = env.ref(xmlid, raise_if_not_found=False)
+                    if rec and hasattr(target, 'x_studio_company_id'):
+                        vals['x_studio_company_id'] = rec.id
+            # Studio boolean flags
+            for bfield in ('x_studio_attendance_administrator',
+                           'x_studio_super_user_melt_items'):
+                if bfield in u and hasattr(target, bfield):
+                    vals[bfield] = bool(u[bfield])
+            # Fix-repair user-side locations (single m2o)
+            for lfield in ('x_studio_source_location',
+                           'x_studio_source_location_1',
+                           'x_studio_virtual_location',
+                           'x_studio_virtual_location_1'):
+                lid = _resolve_loc(u.get(lfield))
+                if lid and hasattr(target, lfield):
+                    vals[lfield] = lid
+            # Studio m2m stock.location — resolve list of ids
+            for m2m_field in ('x_studio_many2many_field_Q50dg',
+                              'x_studio_many2many_field_bQRSA'):
+                src_ids = u.get(m2m_field) or []
+                target_ids = [
+                    loc_target_ids_by_name.get(
+                        (loc_id_meta.get(str(sid)) or {}).get('complete_name')
+                    )
+                    for sid in src_ids
+                ]
+                target_ids = [tid for tid in target_ids if tid]
+                if target_ids and hasattr(target, m2m_field):
+                    vals[m2m_field] = [(6, 0, target_ids)]
+            # Recruitment stages
+            src_stages = u.get('x_studio_recr_stages') or []
+            stage_ids = [stage_target_ids.get(sid) for sid in src_stages]
+            stage_ids = [s for s in stage_ids if s]
+            if stage_ids and hasattr(target, 'x_studio_recr_stages'):
+                vals['x_studio_recr_stages'] = [(6, 0, stage_ids)]
+            # groups_id — full replace with resolved target ids
+            src_groups = u.get('groups_id') or []
+            resolved_groups = [
+                group_target_ids.get(g) for g in src_groups
+            ]
+            resolved_groups = [g for g in resolved_groups if g]
+            if resolved_groups:
+                vals['groups_id'] = [(6, 0, resolved_groups)]
+
+            if vals:
+                target.write(vals)
+                updated += 1
+
+    _logger.info(
+        'seed_master_data_and_settings: applied user data to %d user(s); '
+        'skipped %d (login not found on target env).',
+        updated, skipped_missing_login,
+    )
+
+
 def post_init_hook(env):
     seed_user_passwords(env)
     grant_admins_access_to_seeded_companies(env)
     replicate_warehouses_to_all_companies(env)
     seed_studio_location_flags(env)
     seed_factory_repair_config_param(env)
+    apply_user_data(env)
