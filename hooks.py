@@ -150,20 +150,25 @@ def seed_factory_repair_config_param(env):
     )
     if not company_ref:
         return
-    pw_jm_ref = env.ref(
-        f'seed_master_data_and_settings.warehouse_pw_jm_c{company_ref.id}',
-        raise_if_not_found=False,
-    )
-    if not pw_jm_ref or not pw_jm_ref.lot_stock_id:
+    # Look up PW-JM by (code, company_id) rather than by xmlid — the
+    # warehouse xmlid embeds the CLEAR-DB source company id (e.g.
+    # `warehouse_pw_jm_c2`), not the target env's dev-assigned company
+    # id (which may be 7 on standalone). Search is authoritative and
+    # avoids the source/target id mismatch.
+    pw_jm = env['stock.warehouse'].sudo().search([
+        ('code', '=', 'PW-JM'),
+        ('company_id', '=', company_ref.id),
+    ], limit=1)
+    if not pw_jm or not pw_jm.lot_stock_id:
         return
     Param = env['ir.config_parameter'].sudo()
     key = f'fix_repair.factory_repair_location.{company_ref.id}'
     if Param.get_param(key):
         return
-    Param.set_param(key, str(pw_jm_ref.lot_stock_id.id))
+    Param.set_param(key, str(pw_jm.lot_stock_id.id))
     _logger.info(
         'seed_master_data_and_settings: set %s = %s',
-        key, pw_jm_ref.lot_stock_id.id,
+        key, pw_jm.lot_stock_id.id,
     )
 
 
