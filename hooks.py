@@ -530,16 +530,28 @@ def seed_portal_signature_only(env):
     Param = env['ir.config_parameter'].sudo()
     Param.set_param('sale.default_require_payment', 'False')
     Param.set_param('sale.default_require_signature', 'True')
-    # Existing SOs — batch clear require_payment.
-    SO = env['sale.order'].sudo()
-    stale = SO.search([('require_payment', '=', True)])
-    if stale:
-        stale.write({'require_payment': False})
+    # Existing SOs — batch clear require_payment. Guarded: this module
+    # doesn't depend on `sale`, so on installs without sale the model
+    # is absent from the registry and env['sale.order'] would raise
+    # KeyError.
+    stale_count = 0
+    if 'sale.order' in env:
+        SO = env['sale.order'].sudo()
+        try:
+            stale = SO.search([('require_payment', '=', True)])
+            if stale:
+                stale.write({'require_payment': False})
+                stale_count = len(stale)
+        except (KeyError, ValueError) as e:
+            _logger.warning(
+                'seed_master_data_and_settings: could not clear '
+                'require_payment on existing SOs: %s', e,
+            )
     _logger.info(
         'seed_master_data_and_settings: portal signature-only applied. '
         'Companies touched: %d. Existing SOs with require_payment '
         'cleared: %d.',
-        changed_cos, len(stale),
+        changed_cos, stale_count,
     )
 
 

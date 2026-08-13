@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-"""v8 upgrade — enforce Clear-DB's signature-only portal setup:
+"""v8 upgrade — enforce Clear-DB's signature-only portal setup.
 
-  res.company.portal_confirmation_pay = False on every company
-  sale.order.require_payment = False on every existing SO
-
-post_init_hook fires only on fresh install; upgrade path runs the
-same hook via this migration. Idempotent.
+PATCHED after v8/v9 both crashed on missing `portal_confirmation_pay`
+attribute + `sale.order` model absent from registry. Now delegates to
+the current hook which guards both cases (hasattr + 'sale.order' in
+env). Safe to re-run on failed installs.
 """
 import importlib.util
 import os
