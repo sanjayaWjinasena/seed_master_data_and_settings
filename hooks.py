@@ -167,7 +167,59 @@ def seed_factory_repair_config_param(env):
     )
 
 
+def grant_admins_access_to_seeded_companies(env):
+    """Add the 3 seeded Jinasena companies to every pre-existing
+    internal user's company_ids m2m.
+
+    Without this, admins on the target env (Mitchell Admin etc.)
+    can't see the new companies in the company switcher and can't
+    switch to them to view their warehouses / users / data — the
+    companies exist in the DB but are effectively invisible.
+
+    Idempotent: uses the (4, id) m2m op which is a no-op when the
+    id is already in the set.
+
+    Only touches users that were NOT seeded by this module — the
+    seeded users had their company_ids set correctly by the XML
+    data file.
+    """
+    IMD = env['ir.model.data'].sudo()
+    company_xmlids = [
+        'seed_master_data_and_settings.company_jinasena_pvt_ltd',
+        'seed_master_data_and_settings.company_jinasena_agricultural_machinery',
+        'seed_master_data_and_settings.company_jltd',
+    ]
+    seeded_company_ids = [
+        env.ref(x, raise_if_not_found=False).id
+        for x in company_xmlids
+    ]
+    seeded_company_ids = [c for c in seeded_company_ids if c]
+    if not seeded_company_ids:
+        return
+
+    seeded_user_ids = IMD.search([
+        ('module', '=', 'seed_master_data_and_settings'),
+        ('model', '=', 'res.users'),
+    ]).mapped('res_id')
+
+    other_admins = env['res.users'].sudo().search([
+        ('share', '=', False),
+        ('active', '=', True),
+        ('id', 'not in', seeded_user_ids),
+    ])
+    for user in other_admins:
+        user.write({
+            'company_ids': [(4, cid) for cid in seeded_company_ids],
+        })
+    _logger.info(
+        'seed_master_data_and_settings: granted %d pre-existing '
+        'internal user(s) access to %d seeded company(ies).',
+        len(other_admins), len(seeded_company_ids),
+    )
+
+
 def post_init_hook(env):
     seed_user_passwords(env)
+    grant_admins_access_to_seeded_companies(env)
     seed_studio_location_flags(env)
     seed_factory_repair_config_param(env)
