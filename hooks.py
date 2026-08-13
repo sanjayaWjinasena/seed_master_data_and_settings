@@ -514,13 +514,22 @@ def seed_portal_signature_only(env):
     """
     Company = env['res.company'].sudo()
     changed_cos = 0
+    # These fields live on res.company only when specific Odoo variants
+    # / addons are installed. Guard on hasattr so envs where the
+    # setting is exposed via ir.config_parameter (or res.config.settings
+    # relations to a different model) don't crash the migration.
     for company in Company.search([]):
-        if company.portal_confirmation_pay:
+        if hasattr(company, 'portal_confirmation_pay') and company.portal_confirmation_pay:
             company.portal_confirmation_pay = False
             changed_cos += 1
-        if not company.portal_confirmation_sign:
+        if hasattr(company, 'portal_confirmation_sign') and not company.portal_confirmation_sign:
             company.portal_confirmation_sign = True
             changed_cos += 1
+    # Also set the ir.config_parameter defaults that some Odoo versions
+    # use in place of / alongside the res.company fields.
+    Param = env['ir.config_parameter'].sudo()
+    Param.set_param('sale.default_require_payment', 'False')
+    Param.set_param('sale.default_require_signature', 'True')
     # Existing SOs — batch clear require_payment.
     SO = env['sale.order'].sudo()
     stale = SO.search([('require_payment', '=', True)])
