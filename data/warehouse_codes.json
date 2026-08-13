@@ -1,0 +1,362 @@
+[
+  {
+    "code": "BR-AM",
+    "name": "BR-AM - Warehouse for Ampara Sales Center",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-AN",
+    "name": "BR-AN - Warehouse for Anuradhapura Sales Center",
+    "sequence": 11,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-AV",
+    "name": "Branch warehouse - Avissawella",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-BA",
+    "name": "Branch warehouse - Bandarawela",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-BE",
+    "name": "Branch warehouse - Beruwela",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-BU",
+    "name": "Branch warehouse - Buttala",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-DA",
+    "name": "Branch warehouse - Dambulla",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-EK",
+    "name": "BR-EK - Warehouse for Ekala Sales Center",
+    "sequence": 19,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-EM",
+    "name": "Branch warehouse - Embilipitiya",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-GA",
+    "name": "Branch warehouse - Galle",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-GK",
+    "name": "Branch warehouse - Girandurukotte",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-JF",
+    "name": "Branch warehouse - Jaffna",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-KA",
+    "name": "Branch warehouse - Kandy",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-KD",
+    "name": "Branch warehouse - Kaduruwela",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-KU",
+    "name": "Branch warehouse - Kurunegala",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-NE",
+    "name": "Branch warehouse - Nuwara-Eliya",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "BR-TH",
+    "name": "Branch warehouse - Thambuttegama",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "CW-CM",
+    "name": "Casting warehouse - CW-CM",
+    "sequence": 2,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "IB-EM",
+    "name": "Intransit warehouse - Embilipitiya",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "IW-JM",
+    "name": "Intransit warehouse - JAM",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "JM-EK",
+    "name": "JAM Warehouse Ekala- (JM-EK)",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "JM-NM",
+    "name": "JAM Non Moving Warehouse",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "MW-CM",
+    "name": "Main warehouse - MW-CM",
+    "sequence": 3,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "MW-EK",
+    "name": "Main warehouse - MW-EK",
+    "sequence": 14,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "MW-JC",
+    "name": "Casting Department - MW-JC",
+    "sequence": 16,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "MW-JE",
+    "name": "Main warehouse - Raw material for motors - MW-JE",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "OW-EK",
+    "name": "Oils & lubricants warehouse - OW-EK",
+    "sequence": 4,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "PJ-EI",
+    "name": "Electrical Installation Projects warehouse - PJ-EI",
+    "sequence": 21,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "PL-EK",
+    "name": "Production warehouse - Plastic (PL-EK)",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "PW-E1",
+    "name": "Production warehouse - PW-E1",
+    "sequence": 9,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "PW-JE",
+    "name": "Production warehouse - PW-JE",
+    "sequence": 6,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "PW-JM",
+    "name": "Production Warehouse - (PW-JM)",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "PW-MA",
+    "name": "Production warehouse  JEM Department - (PW-MA)",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "PW-MW",
+    "name": "Production warehouse - PW-MW",
+    "sequence": 7,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "RC-TM",
+    "name": "RC-TM - Warehouse for Colombo Sales Center",
+    "sequence": 12,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "RC-WM",
+    "name": "Retail Counter - Waste Management",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "RC-WX",
+    "name": "Retail Counter - Waste ManagementX",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "RD-JM",
+    "name": "Research and Development JAM Factory Ekala",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "RP-CM",
+    "name": "Repairs warehouse - RP-CM",
+    "sequence": 18,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "RP-EK",
+    "name": "Raw Material Main Warehouse - RP-EK",
+    "sequence": 8,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "RP-JM",
+    "name": "Repairs Warehouse - (RP-JM)",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "RP-QU",
+    "name": "Quick Repairs warehouse - RP-QU",
+    "sequence": 20,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "RP-SC",
+    "name": "JAM Scrap Warehouse",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "SP-RC",
+    "name": "Retail Sales Counter(Sp) - SP-RC",
+    "sequence": 1,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  },
+  {
+    "code": "TD-HO",
+    "name": "Tender warehouse - Head Office",
+    "sequence": 10,
+    "reception_steps": "one_step",
+    "delivery_steps": "ship_only",
+    "manufacture_steps": "mrp_one_step"
+  }
+]
