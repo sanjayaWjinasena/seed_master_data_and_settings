@@ -10,8 +10,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_mw_cm_c1" model="stock.warehouse">
       <field name="name">Main warehouse - MW-CM</field>
@@ -22,8 +20,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_ow_ek_c1" model="stock.warehouse">
       <field name="name">Oils &amp; lubricants warehouse - OW-EK</field>
@@ -34,8 +30,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_sp_rc_c1" model="stock.warehouse">
       <field name="name">Retail Sales Counter(Sp) - SP-RC</field>
@@ -46,8 +40,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_pw_je_c1" model="stock.warehouse">
       <field name="name">Production warehouse - PW-JE</field>
@@ -58,8 +50,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_pw_mw_c1" model="stock.warehouse">
       <field name="name">Production warehouse - PW-MW</field>
@@ -70,8 +60,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_pw_e1_c1" model="stock.warehouse">
       <field name="name">Production warehouse - PW-E1</field>
@@ -82,8 +70,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_rp_ek_c1" model="stock.warehouse">
       <field name="name">Raw Material Main Warehouse - RP-EK</field>
@@ -94,8 +80,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_am_c1" model="stock.warehouse">
       <field name="name">BR-AM - Warehouse for Ampara Sales Center</field>
@@ -106,8 +90,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_an_c1" model="stock.warehouse">
       <field name="name">BR-AN - Warehouse for Anuradhapura Sales Center</field>
@@ -118,8 +100,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_rc_tm_c1" model="stock.warehouse">
       <field name="name">RC-TM - Warehouse for Colombo Sales Center</field>
@@ -130,8 +110,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_mw_ek_c1" model="stock.warehouse">
       <field name="name">Main warehouse - MW-EK</field>
@@ -142,8 +120,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_mw_jc_c1" model="stock.warehouse">
       <field name="name">Casting Department - MW-JC</field>
@@ -154,8 +130,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_rp_cm_c1" model="stock.warehouse">
       <field name="name">Repairs warehouse - RP-CM</field>
@@ -166,8 +140,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_ek_c1" model="stock.warehouse">
       <field name="name">BR-EK - Warehouse for Ekala Sales Center</field>
@@ -178,8 +150,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_rp_qu_c1" model="stock.warehouse">
       <field name="name">Quick Repairs warehouse - RP-QU</field>
@@ -190,8 +160,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_pj_ei_c1" model="stock.warehouse">
       <field name="name">Electrical Installation Projects warehouse - PJ-EI</field>
@@ -202,8 +170,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_mw_je_c1" model="stock.warehouse">
       <field name="name">Main warehouse - Raw material for motors - MW-JE</field>
@@ -214,8 +180,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_pw_jm_c2" model="stock.warehouse">
       <field name="name">Production Warehouse - (PW-JM)</field>
@@ -226,8 +190,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_rp_jm_c2" model="stock.warehouse">
       <field name="name">Repairs Warehouse - (RP-JM)</field>
@@ -238,8 +200,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_br_ek_c2" model="stock.warehouse">
       <field name="name">Branch Warehouse - Ekala(BR-EK)</field>
@@ -250,8 +210,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_pw_e1_c3" model="stock.warehouse">
       <field name="name">Production warehouse - Pumps (PW-E1)</field>
@@ -262,8 +220,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_pl_ek_c3" model="stock.warehouse">
       <field name="name">Production warehouse - Plastic (PL-EK)</field>
@@ -274,8 +230,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_mw_jc_c3" model="stock.warehouse">
       <field name="name">Production warehouse - Casting (MW-JC)</field>
@@ -286,8 +240,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_cw_cm_c3" model="stock.warehouse">
       <field name="name">Casting warehouse -  (CW-CM)</field>
@@ -298,8 +250,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_rp_ek_c3" model="stock.warehouse">
       <field name="name">Raw Material Warehouse - (RP-EK)</field>
@@ -310,8 +260,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_ow_ek_c3" model="stock.warehouse">
       <field name="name">Oils &amp; lubricants warehouse - (OW-EK)</field>
@@ -322,8 +270,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_pw_ma_c3" model="stock.warehouse">
       <field name="name">Production warehouse  JEM Department - (PW-MA)</field>
@@ -334,8 +280,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_pw_je_c3" model="stock.warehouse">
       <field name="name">Production warehouse - Motor winding &amp; assembly - (PW-JE)</field>
@@ -346,8 +290,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_mw_cm_c3" model="stock.warehouse">
       <field name="name">Main warehouse(Primovers) - (MW-CM)</field>
@@ -358,8 +300,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_mw_ek_c3" model="stock.warehouse">
       <field name="name">Main warehouse - MW-EK</field>
@@ -370,8 +310,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_mw_je_c3" model="stock.warehouse">
       <field name="name">Main warehouse - Raw material for motors - (MW-JE)</field>
@@ -382,8 +320,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_pw_mw_c3" model="stock.warehouse">
       <field name="name">Production warehouse Motor Winding - (PW-MW)</field>
@@ -394,8 +330,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_rp_cm_c3" model="stock.warehouse">
       <field name="name">Repair warehouse - Colombo (RP-CM)</field>
@@ -406,8 +340,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_br_ek_c3" model="stock.warehouse">
       <field name="name">Branch warehouse - Ekala (BR-EK)</field>
@@ -418,8 +350,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_jm_ek_c2" model="stock.warehouse">
       <field name="name">JAM Warehouse Ekala- (JM-EK)</field>
@@ -430,8 +360,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_pw_ma_c1" model="stock.warehouse">
       <field name="name">Production warehouse for Machining and Assembly of JEM - ( PW-MA )</field>
@@ -442,8 +370,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="False"/>
     </record>
     <record id="warehouse_pl_ek_c1" model="stock.warehouse">
       <field name="name">Plastic Warehouse - ( PL-EK )</field>
@@ -454,8 +380,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_am_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Ampara</field>
@@ -466,8 +390,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_an_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Anuradhapura</field>
@@ -478,8 +400,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_av_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Avissawella</field>
@@ -490,8 +410,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_ba_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Bandarawela</field>
@@ -502,8 +420,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_be_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Beruwela</field>
@@ -514,8 +430,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_bu_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Buttala</field>
@@ -526,8 +440,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_da_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Dambulla</field>
@@ -538,8 +450,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_em_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Embilipitiya</field>
@@ -550,8 +460,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_ga_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Galle</field>
@@ -562,8 +470,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_gk_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Girandurukotte</field>
@@ -574,8 +480,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_jf_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Jaffna</field>
@@ -586,8 +490,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_ka_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Kandy</field>
@@ -598,8 +500,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_kd_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Kaduruwela</field>
@@ -610,8 +510,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_ku_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Kurunegala</field>
@@ -622,8 +520,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_ne_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Nuwara-Eliya</field>
@@ -634,8 +530,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_br_th_c2" model="stock.warehouse">
       <field name="name">Branch warehouse - Thambuttegama</field>
@@ -646,8 +540,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_rp_sc_c2" model="stock.warehouse">
       <field name="name">JAM Scrap Warehouse</field>
@@ -658,8 +550,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_rd_jm_c2" model="stock.warehouse">
       <field name="name">Research and Development JAM Factory Ekala</field>
@@ -670,8 +560,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_rc_wx_c2" model="stock.warehouse">
       <field name="name">Retail Counter - Waste ManagementX</field>
@@ -682,8 +570,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_rc_tm_c2" model="stock.warehouse">
       <field name="name">Retail Counter for Products, Implements And Accessories - Thimbirigasya</field>
@@ -694,8 +580,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_jm_nm_c2" model="stock.warehouse">
       <field name="name">JAM Non Moving Warehouse</field>
@@ -706,8 +590,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_iw_jm_c2" model="stock.warehouse">
       <field name="name">Intransit warehouse - JAM</field>
@@ -718,8 +600,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_ib_em_c2" model="stock.warehouse">
       <field name="name">Intransit warehouse - Embilipitiya</field>
@@ -730,8 +610,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_rc_wm_c2" model="stock.warehouse">
       <field name="name">Retail Counter - Waste Management</field>
@@ -742,8 +620,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="False"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
     <record id="warehouse_td_ho_c2" model="stock.warehouse">
       <field name="name">Tender warehouse - Head Office</field>
@@ -754,8 +630,6 @@
       <field name="reception_steps">one_step</field>
       <field name="delivery_steps">ship_only</field>
       <field name="manufacture_steps">mrp_one_step</field>
-      <field name="manufacture_to_resupply" eval="True"/>
-      <field name="buy_to_resupply" eval="True"/>
     </record>
   </data>
 </odoo>

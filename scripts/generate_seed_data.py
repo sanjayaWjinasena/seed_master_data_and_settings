@@ -210,10 +210,11 @@ def gen_stock_warehouse(warehouses, out_path):
         for k in ('reception_steps', 'delivery_steps', 'manufacture_steps'):
             if wh.get(k):
                 fields.append(f'      <field name="{k}">{xattr(wh[k])}</field>')
-        # booleans
-        for k in ('manufacture_to_resupply', 'buy_to_resupply'):
-            if k in wh:
-                fields.append(f'      <field name="{k}" eval="{wh[k]}"/>')
+        # Note: 'manufacture_to_resupply' (mrp) and 'buy_to_resupply'
+        # (purchase_stock) are intentionally NOT emitted. They only
+        # exist when their owning modules are installed, and this seed
+        # module deliberately keeps depends minimal (base/stock/hr/mail).
+        # Odoo picks safe defaults on warehouse.create() for both.
         lines.append(f'    <record id="{xmlid}" model="stock.warehouse">')
         lines.extend(fields)
         lines.append('    </record>')
