@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data noupdate="0">
+    <record id="partner_3" model="res.partner">
+      <field name="name">Rohana Balagalla</field>
+      <field name="email">rohana.b@jinasena.com.lk</field>
+      <field name="phone">a</field>
+      <field name="mobile">a</field>
+      <field name="city">ye</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_pvt_ltd"/>
+    </record>
+    <record id="partner_10" model="res.partner">
+      <field name="name">Kapila Hettiarachchi - New 17</field>
+      <field name="email">kapila.h@jinasena.com.lk</field>
+      <field name="mobile">234234</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_11" model="res.partner">
+      <field name="name">Shehan De Silva</field>
+      <field name="email">shehan@unitedscience.org</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_pvt_ltd"/>
+    </record>
+    <record id="partner_27" model="res.partner">
+      <field name="name">Milinda Bakmiwewa</field>
+      <field name="email">milinda.bakmiwewa@jinasena.com.lk</field>
+      <field name="mobile">0123456789</field>
+      <field name="city">Colombo 08</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_29" model="res.partner">
+      <field name="name">Janitha Chamath Ranasinghe</field>
+      <field name="email">janitharc@gmail.com</field>
+      <field name="phone">+94 77 753 5357</field>
+      <field name="mobile">sasas</field>
+      <field name="city">Veyangoda</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_pvt_ltd"/>
+    </record>
+    <record id="partner_448" model="res.partner">
+      <field name="name">Tharaka Herath</field>
+      <field name="email">tharaka.h@jinasena.com.lk</field>
+      <field name="phone">+94774424416</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_pvt_ltd"/>
+    </record>
+    <record id="partner_473" model="res.partner">
+      <field name="name">Chandika Rathnayake</field>
+      <field name="email">chandika.r@jinasena.com.lk</field>
+      <field name="phone">0740600217</field>
+      <field name="mobile">1111111111</field>
+      <field name="city">Colombo8</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_pvt_ltd"/>
+    </record>
+    <record id="partner_1585" model="res.partner">
+      <field name="name">Stores Manager</field>
+      <field name="email">storesmanager@jinasena.com.lk</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6212" model="res.partner">
+      <field name="name">HR UAT</field>
+      <field name="email">uat@jinasena.com.lk</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6705" model="res.partner">
+      <field name="name">Kamani Ekanayaka BR-KA</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6706" model="res.partner">
+      <field name="name">Jayani Tharangi - Finance</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6707" model="res.partner">
+      <field name="name">Himesha Bandara Rajaguru</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6708" model="res.partner">
+      <field name="name">Sethmini Prasansa - BR-AM</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6709" model="res.partner">
+      <field name="name">Shanika Hansamali - BR-AN</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6710" model="res.partner">
+      <field name="name">Maheshika Karunarathna BR-AV</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6711" model="res.partner">
+      <field name="name">Rashmi Tanya - BR-BE</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6712" model="res.partner">
+      <field name="name">Chathurika Dilshani - BR-BU</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6713" model="res.partner">
+      <field name="name">Sampath Suwandirakkarage - BR-DA</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6714" model="res.partner">
+      <field name="name">Samadi Silva - BR-EK</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6715" model="res.partner">
+      <field name="name">Prema Ranjani Rajapaksha - BR-EM</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6716" model="res.partner">
+      <field name="name">PW Nilusha Priyangika BR-GA</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6717" model="res.partner">
+      <field name="name">Sinthuja Srikanth - BR-JF</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6718" model="res.partner">
+      <field name="name">Nipuni Lakmali Rathnayake - BR-KU</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6719" model="res.partner">
+      <field name="name">Charindu Rusith Thirimanne - BR-KU</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6720" model="res.partner">
+      <field name="name">Achala De Silva - Finance</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6721" model="res.partner">
+      <field name="name">Roshini Anandam BR-NE</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6722" model="res.partner">
+      <field name="name">Sherin Dilani - Finance</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6723" model="res.partner">
+      <field name="name">Dilum Iranjan Hewagamage - Sales</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6724" model="res.partner">
+      <field name="name">Inoka Priyadarshani - Sales</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6725" model="res.partner">
+      <field name="name">Apsara Madubashini - BR-KU</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6726" model="res.partner">
+      <field name="name">Chaminda Bandara - BR-DA</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6727" model="res.partner">
+      <field name="name">Sahan Fernando - BR-EK</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_6750" model="res.partner">
+      <field name="name">Sanjaya Weerasingha</field>
+      <field name="email">sanjaya.w@jinasena.com.lk</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+    <record id="partner_7442" model="res.partner">
+      <field name="name">ABC</field>
+      <field name="email">abc@abc.com</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_pvt_ltd"/>
+    </record>
+    <record id="partner_7445" model="res.partner">
+      <field name="name">Branch User for Odoo Tresting</field>
+      <field name="email">branch@jinasena.com.lk</field>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+    </record>
+  </data>
+</odoo>

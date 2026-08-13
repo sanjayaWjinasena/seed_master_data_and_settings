@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data noupdate="0">
+    <record id="partner_1" model="res.partner">
+      <field name="name">Jinasena (Pvt) Ltd.</field>
+      <field name="is_company">1</field>
+      <field name="company_type">company</field>
+    </record>
+    <record id="partner_87" model="res.partner">
+      <field name="name">Jinasena Agricultural Machinery (Pvt) Ltd.</field>
+      <field name="is_company">1</field>
+      <field name="company_type">company</field>
+    </record>
+    <record id="partner_511" model="res.partner">
+      <field name="name">JLTD</field>
+      <field name="is_company">1</field>
+      <field name="company_type">company</field>
+    </record>
+  </data>
+</odoo>

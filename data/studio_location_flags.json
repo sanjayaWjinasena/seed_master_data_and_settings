@@ -1,0 +1,183 @@
+[
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Raw Material Main Warehouse - RP-EK",
+    "complete_name": "RP-EK/FinishGood",
+    "usage": "internal",
+    "flags": {
+      "x_studio_finished_good_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Production warehouse - PW-E1",
+    "complete_name": "PW-E1/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_finished_good_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "BR-AM - Warehouse for Ampara Sales Center",
+    "complete_name": "BR-AM/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_repair_return_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Production warehouse for Machining and Assembly of JEM - ( PW-MA )",
+    "complete_name": "PW-MA/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_finished_good_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Plastic Warehouse - ( PL-EK )",
+    "complete_name": "PL-EK/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_finished_good_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "BR-AN - Warehouse for Anuradhapura Sales Center",
+    "complete_name": "BR-AN/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_repair_return_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "RC-TM - Warehouse for Colombo Sales Center",
+    "complete_name": "RC-TM/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_repair_return_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Main warehouse - MW-EK",
+    "complete_name": "MW-EK/FinishGood",
+    "usage": "internal",
+    "flags": {
+      "x_studio_finished_good_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Main warehouse - MW-EK",
+    "complete_name": "Temp",
+    "usage": "view",
+    "flags": {
+      "x_studio_temp_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Casting Department - MW-JC",
+    "complete_name": "MW-JC/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_finished_good_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Casting Department - MW-JC",
+    "complete_name": "MW-JC/FinishGood",
+    "usage": "internal",
+    "flags": {
+      "x_studio_finished_good_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Repairs warehouse - RP-CM",
+    "complete_name": "RP-CM/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_repair_factory_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "BR-EK - Warehouse for Ekala Sales Center",
+    "complete_name": "BR-EK/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_repair_return_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Quick Repairs warehouse - RP-QU",
+    "complete_name": "RP-QU/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_repair_return_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Production Warehouse - (PW-JM)",
+    "complete_name": "PW-JM/Transit",
+    "usage": "internal",
+    "flags": {
+      "x_studio_temp_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Repairs Warehouse - (RP-JM)",
+    "complete_name": "RP-JM/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_repair_factory_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Branch Warehouse - Ekala(BR-EK)",
+    "complete_name": "BR-EK/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_repair_return_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Branch warehouse - Ampara",
+    "complete_name": "BR-AM/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_repair_factory_location": true,
+      "x_studio_repair_return_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Branch warehouse - Avissawella",
+    "complete_name": "BR-AV/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_repair_return_location": true
+    }
+  },
+  {
+    "warehouse_code": null,
+    "warehouse_display": "Branch warehouse - Nuwara-Eliya",
+    "complete_name": "BR-NE/Stock",
+    "usage": "internal",
+    "flags": {
+      "x_studio_repair_return_location": true
+    }
+  }
+]

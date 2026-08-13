@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data noupdate="0">
+    <record id="company_jinasena_pvt_ltd" model="res.company">
+      <field name="name">Jinasena (Pvt) Ltd.</field>
+      <field name="partner_id" ref="partner_1"/>
+      <field name="currency_id" ref="base.LKR"/>
+      <field name="country_id" ref="base.lk"/>
+      <field name="sequence">0</field>
+      <field name="email">rohana.b@jinasena.com.lk</field>
+      <field name="phone">0112 687 916</field>
+      <field name="website">http://www.jinasena.com</field>
+    </record>
+    <record id="company_jinasena_agricultural_machinery" model="res.company">
+      <field name="name">Jinasena Agricultural Machinery (Pvt) Ltd.</field>
+      <field name="partner_id" ref="partner_87"/>
+      <field name="currency_id" ref="base.LKR"/>
+      <field name="country_id" ref="base.lk"/>
+      <field name="sequence">1</field>
+    </record>
+    <record id="company_jltd" model="res.company">
+      <field name="name">JLTD</field>
+      <field name="partner_id" ref="partner_511"/>
+      <field name="currency_id" ref="base.LKR"/>
+      <field name="sequence">10</field>
+    </record>
+  </data>
+</odoo>

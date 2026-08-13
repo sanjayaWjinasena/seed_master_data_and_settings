@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data noupdate="0">
+    <record id="user_2" model="res.users">
+      <field name="login">rohana.b@jinasena.com.lk</field>
+      <field name="name">Rohana Balagalla</field>
+      <field name="partner_id" ref="partner_3"/>
+      <field name="company_id" ref="company_jinasena_pvt_ltd"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_pvt_ltd'), ref('company_jinasena_agricultural_machinery'), ref('company_jltd')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_8" model="res.users">
+      <field name="login">kapila.h@jinasena.com.lk</field>
+      <field name="name">Kapila Hettiarachchi - New 17</field>
+      <field name="partner_id" ref="partner_10"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_pvt_ltd'), ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">inbox</field>
+    </record>
+    <record id="user_9" model="res.users">
+      <field name="login">shehan@unitedscience.org</field>
+      <field name="name">Shehan De Silva</field>
+      <field name="partner_id" ref="partner_11"/>
+      <field name="company_id" ref="company_jinasena_pvt_ltd"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_pvt_ltd')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_24" model="res.users">
+      <field name="login">milinda.bakmiwewa@jinasena.com.lk</field>
+      <field name="name">Milinda Bakmiwewa</field>
+      <field name="partner_id" ref="partner_27"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_pvt_ltd'), ref('company_jinasena_agricultural_machinery'), ref('company_jltd')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">inbox</field>
+    </record>
+    <record id="user_25" model="res.users">
+      <field name="login">janitha.r@jinasena.com.lk</field>
+      <field name="name">Janitha Chamath Ranasinghe</field>
+      <field name="partner_id" ref="partner_29"/>
+      <field name="company_id" ref="company_jinasena_pvt_ltd"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_pvt_ltd'), ref('company_jinasena_agricultural_machinery'), ref('company_jltd')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_146" model="res.users">
+      <field name="login">tharaka.h@jinasena.com.lk</field>
+      <field name="name">Tharaka Herath</field>
+      <field name="partner_id" ref="partner_448"/>
+      <field name="company_id" ref="company_jinasena_pvt_ltd"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_pvt_ltd')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_164" model="res.users">
+      <field name="login">chandika.r@jinasena.com.lk</field>
+      <field name="name">Chandika Rathnayake</field>
+      <field name="partner_id" ref="partner_473"/>
+      <field name="company_id" ref="company_jinasena_pvt_ltd"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_pvt_ltd'), ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_638" model="res.users">
+      <field name="login">storesmanager@jinasena.com.lk</field>
+      <field name="name">Stores Manager</field>
+      <field name="partner_id" ref="partner_1585"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_643" model="res.users">
+      <field name="login">uat@jinasena.com.lk</field>
+      <field name="name">HR UAT</field>
+      <field name="partner_id" ref="partner_6212"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_723" model="res.users">
+      <field name="login">kandy@jinasena.com.lk</field>
+      <field name="name">Kamani Ekanayaka BR-KA</field>
+      <field name="partner_id" ref="partner_6705"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_724" model="res.users">
+      <field name="login">jayani.t@jinasena.com.lk</field>
+      <field name="name">Jayani Tharangi - Finance</field>
+      <field name="partner_id" ref="partner_6706"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_725" model="res.users">
+      <field name="login">himesha.r@jinasena.com.lk</field>
+      <field name="name">Himesha Bandara Rajaguru</field>
+      <field name="partner_id" ref="partner_6707"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_726" model="res.users">
+      <field name="login">ampara@jinasena.com.lk</field>
+      <field name="name">Sethmini Prasansa - BR-AM</field>
+      <field name="partner_id" ref="partner_6708"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_727" model="res.users">
+      <field name="login">anuradhapura@jinasena.com.lk</field>
+      <field name="name">Shanika Hansamali - BR-AN</field>
+      <field name="partner_id" ref="partner_6709"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_728" model="res.users">
+      <field name="login">avissawella@jinasena.com.lk</field>
+      <field name="name">Maheshika Karunarathna BR-AV</field>
+      <field name="partner_id" ref="partner_6710"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_729" model="res.users">
+      <field name="login">beruwala@jinasena.com.lk</field>
+      <field name="name">Rashmi Tanya - BR-BE</field>
+      <field name="partner_id" ref="partner_6711"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_730" model="res.users">
+      <field name="login">buttala@jinasena.com.lk</field>
+      <field name="name">Chathurika Dilshani - BR-BU</field>
+      <field name="partner_id" ref="partner_6712"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_731" model="res.users">
+      <field name="login">dambulla1@jinasena.com.lk</field>
+      <field name="name">Sampath Suwandirakkarage - BR-DA</field>
+      <field name="partner_id" ref="partner_6713"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_732" model="res.users">
+      <field name="login">ekala@jinasena.com.lk</field>
+      <field name="name">Samadi Silva - BR-EK</field>
+      <field name="partner_id" ref="partner_6714"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_733" model="res.users">
+      <field name="login">embilipitiya@jinasena.com.lk</field>
+      <field name="name">Prema Ranjani Rajapaksha - BR-EM</field>
+      <field name="partner_id" ref="partner_6715"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_734" model="res.users">
+      <field name="login">galle@jinasena.com.lk</field>
+      <field name="name">PW Nilusha Priyangika BR-GA</field>
+      <field name="partner_id" ref="partner_6716"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_735" model="res.users">
+      <field name="login">jaffna@jinasena.com.lk</field>
+      <field name="name">Sinthuja Srikanth - BR-JF</field>
+      <field name="partner_id" ref="partner_6717"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_736" model="res.users">
+      <field name="login">kurunegala1@jinasena.com.lk</field>
+      <field name="name">Nipuni Lakmali Rathnayake - BR-KU</field>
+      <field name="partner_id" ref="partner_6718"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_737" model="res.users">
+      <field name="login">kurunegala2@jinasena.com.lk</field>
+      <field name="name">Charindu Rusith Thirimanne - BR-KU</field>
+      <field name="partner_id" ref="partner_6719"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_738" model="res.users">
+      <field name="login">achala.d@jinasena.com.lk</field>
+      <field name="name">Achala De Silva - Finance</field>
+      <field name="partner_id" ref="partner_6720"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_739" model="res.users">
+      <field name="login">nuwaraeliya@jinasena.com.lk</field>
+      <field name="name">Roshini Anandam BR-NE</field>
+      <field name="partner_id" ref="partner_6721"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_740" model="res.users">
+      <field name="login">sherin.d@jinasena.com.lk</field>
+      <field name="name">Sherin Dilani - Finance</field>
+      <field name="partner_id" ref="partner_6722"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_741" model="res.users">
+      <field name="login">dilum.h@jinasena.com.lk</field>
+      <field name="name">Dilum Iranjan Hewagamage - Sales</field>
+      <field name="partner_id" ref="partner_6723"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_742" model="res.users">
+      <field name="login">inoka.p@jinasena.com.lk</field>
+      <field name="name">Inoka Priyadarshani - Sales</field>
+      <field name="partner_id" ref="partner_6724"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_743" model="res.users">
+      <field name="login">kurunegala@jinasena.com.lk</field>
+      <field name="name">Apsara Madubashini - BR-KU</field>
+      <field name="partner_id" ref="partner_6725"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_744" model="res.users">
+      <field name="login">dambulla@jinasena.com.lk</field>
+      <field name="name">Chaminda Bandara - BR-DA</field>
+      <field name="partner_id" ref="partner_6726"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_745" model="res.users">
+      <field name="login">sahan@f@jinasena.com.lk</field>
+      <field name="name">Sahan Fernando - BR-EK</field>
+      <field name="partner_id" ref="partner_6727"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_746" model="res.users">
+      <field name="login">sanjaya.w@jinasena.com.lk</field>
+      <field name="name">Sanjaya Weerasingha</field>
+      <field name="partner_id" ref="partner_6750"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_747" model="res.users">
+      <field name="login">abc@abc.com</field>
+      <field name="name">ABC</field>
+      <field name="partner_id" ref="partner_7442"/>
+      <field name="company_id" ref="company_jinasena_pvt_ltd"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_pvt_ltd'), ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+    <record id="user_748" model="res.users">
+      <field name="login">branch@jinasena.com.lk</field>
+      <field name="name">Branch User for Odoo Tresting</field>
+      <field name="partner_id" ref="partner_7445"/>
+      <field name="company_id" ref="company_jinasena_agricultural_machinery"/>
+      <field name="company_ids" eval="[(6, 0, [ref('company_jinasena_pvt_ltd'), ref('company_jinasena_agricultural_machinery')])]"/>
+      <field name="lang">en_US</field>
+      <field name="tz">Asia/Colombo</field>
+      <field name="notification_type">email</field>
+    </record>
+  </data>
+</odoo>
