@@ -495,10 +495,50 @@ def apply_user_data(env):
     )
 
 
+def seed_portal_signature_only(env):
+    """Match Clear-DB's portal-confirmation setup: signature required,
+    payment NOT required. Applied at two layers:
+
+      1. res.company.portal_confirmation_pay = False on every company
+         (default for future SOs created via UI / API).
+      2. Every existing sale.order with require_payment=True gets set
+         to False so tickets already in the pipeline stop asking for
+         payment on the portal preview.
+
+    Clear-DB always used signature-only confirmation for Repair (and
+    all other) SOs — verified via RPC 2026-08-13 (all sampled repair
+    SOs had require_payment=False, res.company.portal_confirmation_pay
+    was False on the JAM company).
+
+    Idempotent: only writes when the current value differs.
+    """
+    Company = env['res.company'].sudo()
+    changed_cos = 0
+    for company in Company.search([]):
+        if company.portal_confirmation_pay:
+            company.portal_confirmation_pay = False
+            changed_cos += 1
+        if not company.portal_confirmation_sign:
+            company.portal_confirmation_sign = True
+            changed_cos += 1
+    # Existing SOs — batch clear require_payment.
+    SO = env['sale.order'].sudo()
+    stale = SO.search([('require_payment', '=', True)])
+    if stale:
+        stale.write({'require_payment': False})
+    _logger.info(
+        'seed_master_data_and_settings: portal signature-only applied. '
+        'Companies touched: %d. Existing SOs with require_payment '
+        'cleared: %d.',
+        changed_cos, len(stale),
+    )
+
+
 def post_init_hook(env):
     seed_user_passwords(env)
     grant_admins_access_to_seeded_companies(env)
     replicate_warehouses_to_all_companies(env)
     seed_studio_location_flags(env)
     seed_factory_repair_config_param(env)
+    seed_portal_signature_only(env)
     apply_user_data(env)
