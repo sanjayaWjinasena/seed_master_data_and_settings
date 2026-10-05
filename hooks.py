@@ -556,6 +556,16 @@ def seed_portal_signature_only(env):
 
 
 def post_init_hook(env):
+    # v17.0.1.0.12: the seed XML files are loaded here, not from the
+    # manifest. On a real-data database (production copy with Studio)
+    # existing records are only adopted and NOTHING is pushed: no users
+    # created, no passwords, no company access, no warehouses, no
+    # settings. See adopt.py.
+    from .adopt import is_real_data_env, adopt_existing, load_seed_files
+    if is_real_data_env(env):
+        adopt_existing(env)
+        return
+    load_seed_files(env)
     seed_user_passwords(env)
     grant_admins_access_to_seeded_companies(env)
     replicate_warehouses_to_all_companies(env)

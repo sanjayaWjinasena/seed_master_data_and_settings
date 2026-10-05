@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Masterdata : Setup Data',
-    'version': '17.0.1.0.11',
+    'version': '17.0.1.0.12',
     'summary': (
         'Seeds Jinasena companies, users, warehouses and stock locations '
         'from Clear-DB into a bare Odoo Enterprise instance.'
@@ -31,11 +31,10 @@ are untouched. All records use stable xmlids so upgrades are safe.
     ],
     'data': [
         'security/ir.model.access.csv',
-        'data/res_partner_companies.xml',
-        'data/res_company.xml',
-        'data/res_partner_users.xml',
-        'data/res_users.xml',
-        'data/stock_warehouse.xml',
+        # v17.0.1.0.12: data/res_partner_companies.xml, res_company.xml,
+        # res_partner_users.xml, res_users.xml and stock_warehouse.xml are
+        # loaded by post_init_hook (adopt.py) so a production copy is
+        # adopted without pushing data. Do not list them here.
     ],
     'post_init_hook': 'post_init_hook',
     'installable': True,
