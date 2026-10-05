@@ -75,7 +75,7 @@ def _bind(env, xmlid, model, res_id):
 
 def adopt_existing(env):
     """Bind seed xmlids to the matching real records. Writes nothing else."""
-    sudo = env.sudo()
+    sudo = env(su=True)   # Odoo 17: Environment has no .sudo(); records do
     counts = dict(companies=0, company_partners=0, users=0, user_partners=0, warehouses=0)
     skipped = dict(users=[], warehouses=[], companies=[])
 

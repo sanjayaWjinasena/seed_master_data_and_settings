@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Masterdata : Setup Data',
-    'version': '17.0.1.0.12',
+    'version': '17.0.1.0.13',
     'summary': (
         'Seeds Jinasena companies, users, warehouses and stock locations '
         'from Clear-DB into a bare Odoo Enterprise instance.'
