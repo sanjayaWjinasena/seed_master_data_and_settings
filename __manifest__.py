@@ -32,7 +32,7 @@ are untouched. All records use stable xmlids so upgrades are safe.
         'data/res_partner_companies.xml',
         'data/res_company.xml',
         'data/res_partner_users.xml',
-        'data/res_users.xml',
+        'data/res_users.xml',
     ],
     'post_init_hook': 'post_init_hook',
     'installable': True,
