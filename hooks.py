@@ -8,7 +8,8 @@ Handles the post-XML data-file work that XML can't express cleanly:
    lives here (not in git-committed data XML) and MUST be rotated
    on production imports.
 
-2. Apply Studio x_studio_* flags on stock.location records auto-
+2. (No-op unless warehouses exist: the module no longer seeds any.)
+   Apply Studio x_studio_* flags on stock.location records auto-
    created by the warehouse seed. The stock.location fields
    (x_studio_repair_return_location, _repair_factory_location, etc.)
    are declared by Fix-repair — guarded so this hook is a no-op if
@@ -220,90 +221,6 @@ def grant_admins_access_to_seeded_companies(env):
         'seed_master_data_and_settings: granted %d pre-existing '
         'internal user(s) access to %d seeded company(ies).',
         len(other_admins), len(seeded_company_ids),
-    )
-
-
-def replicate_warehouses_to_all_companies(env):
-    """Ensure every distinct Clear-DB warehouse code exists on every
-    active company.
-
-    Reads data/warehouse_codes.json (bundled) — 45 distinct codes with
-    canonical name/sequence/step-config templates. For each active
-    company on the target env, creates any missing (code, company_id)
-    warehouse. Existing warehouses (any (code, company_id) already
-    present) are skipped — idempotent.
-
-    Result on a fresh dev env: 45 codes × 8 companies (3 Jinasena +
-    5 Odoo demo) = 360 warehouses. Any repair-flow ticket can be
-    routed through BR-* / PW-* / RP-* / etc. regardless of which
-    company the ticket lives on.
-
-    Warehouse.create() side-effects (sub-locations, picking types,
-    routes) fire per record — this hook can take ~30-60s on a fresh
-    install. Log every 20 to signal progress.
-    """
-    import json as _json
-    payload_path = os.path.join(
-        os.path.dirname(__file__), 'data', 'warehouse_codes.json',
-    )
-    if not os.path.exists(payload_path):
-        _logger.warning(
-            'seed_master_data_and_settings: warehouse_codes.json missing; '
-            'skipping cross-company warehouse replication.'
-        )
-        return
-    with open(payload_path, encoding='utf-8') as f:
-        templates = _json.load(f)
-
-    Wh = env['stock.warehouse'].sudo()
-    companies = env['res.company'].sudo().search([])
-    created = 0
-    skipped = 0
-    for company in companies:
-        for tpl in templates:
-            existing = Wh.search([
-                ('code', '=', tpl['code']),
-                ('company_id', '=', company.id),
-            ], limit=1)
-            if existing:
-                skipped += 1
-                continue
-            vals = {
-                'name': tpl['name'],
-                'code': tpl['code'],
-                'company_id': company.id,
-                'sequence': tpl.get('sequence', 10),
-            }
-            for step in ('reception_steps', 'delivery_steps',
-                         'manufacture_steps'):
-                if step in tpl:
-                    vals[step] = tpl[step]
-            # Savepoint: catch failures at the SQL layer so a bad
-            # create() doesn't poison the outer transaction. Without
-            # this the next Wh.search() throws InFailedSqlTransaction
-            # ("current transaction is aborted, commands ignored").
-            try:
-                with env.cr.savepoint():
-                    Wh.create(vals)
-                created += 1
-                if created % 20 == 0:
-                    _logger.info(
-                        'seed_master_data_and_settings: created %d '
-                        'warehouse(s) so far...', created,
-                    )
-            except Exception as e:
-                # Odoo can refuse warehouse creation on companies with
-                # certain module states (e.g. no country + no default
-                # sequence). Savepoint rolled back — log and continue.
-                _logger.warning(
-                    'seed_master_data_and_settings: failed to create '
-                    'warehouse %s on company %s: %s',
-                    tpl['code'], company.name, e,
-                )
-    _logger.info(
-        'seed_master_data_and_settings: warehouse replication done — '
-        'created %d, skipped %d (already present).',
-        created, skipped,
     )
 
 
@@ -558,7 +475,6 @@ def seed_portal_signature_only(env):
 def post_init_hook(env):
     seed_user_passwords(env)
     grant_admins_access_to_seeded_companies(env)
-    replicate_warehouses_to_all_companies(env)
     seed_studio_location_flags(env)
     seed_factory_repair_config_param(env)
     seed_portal_signature_only(env)
