@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 {
+    # upgrade-testing branch: data files below are commented out - this branch installs functions only, no data is seeded.
     'name': 'Jinasena : Masterdata : Setup Data',
     'version': '17.0.1.0.12',
     'summary': (
@@ -29,12 +30,12 @@ are untouched. All records use stable xmlids so upgrades are safe.
     ],
     'data': [
         'security/ir.model.access.csv',
-        'data/res_partner_companies.xml',
-        'data/res_company.xml',
-        'data/res_partner_users.xml',
-        'data/res_users.xml',
+        # 'data/res_partner_companies.xml',  # upgrade-testing: data, not shipped
+        # 'data/res_company.xml',  # upgrade-testing: data, not shipped
+        # 'data/res_partner_users.xml',  # upgrade-testing: data, not shipped
+        # 'data/res_users.xml',  # upgrade-testing: data, not shipped
     ],
-    'post_init_hook': 'post_init_hook',
+    # 'post_init_hook': 'post_init_hook',  # upgrade-testing: seed does nothing
     'installable': True,
     'auto_install': False,
     'application': False,
