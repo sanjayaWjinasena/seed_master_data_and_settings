@@ -240,11 +240,11 @@ def gen_studio_location_flags_json(locations, out_path):
         studio_fields = {
             k: loc.get(k)
             for k in (
-                'x_studio_finished_good_location',
-                'x_studio_repair_factory_location',
-                'x_studio_repair_return_location',
-                'x_studio_temp_location',
-                'x_studio_return_receipt_location',
+                'finished_good_location',
+                'repair_factory_location',
+                'repair_return_location',
+                'temp_location',
+                'return_receipt_location',
             )
             if loc.get(k)  # only include truthy values
         }

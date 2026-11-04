@@ -10,7 +10,7 @@ Handles the post-XML data-file work that XML can't express cleanly:
 
 2. Apply Studio x_studio_* flags on stock.location records auto-
    created by the warehouse seed. The stock.location fields
-   (x_studio_repair_return_location, _repair_factory_location, etc.)
+   (repair_return_location, _repair_factory_location, etc.)
    are declared by Fix-repair — guarded so this hook is a no-op if
    Fix-repair isn't installed on the target env.
 
@@ -32,30 +32,30 @@ SEED_TEMP_PASSWORD = 'ChangeMe2026!'
 # Extend as new warehouse-to-role conventions emerge.
 _WAREHOUSE_ROLES = {
     # (code_prefix, company_id): {flag_field: True}
-    'PW-JM': {'x_studio_repair_factory_location': True},
-    'RP-JM': {'x_studio_repair_factory_location': True},
-    'RP-CM': {'x_studio_repair_factory_location': True},
-    'RP-QU': {'x_studio_repair_factory_location': True},
-    'RP-SC': {'x_studio_repair_factory_location': True},
-    'RP-EK': {'x_studio_repair_factory_location': True},
+    'PW-JM': {'repair_factory_location': True},
+    'RP-JM': {'repair_factory_location': True},
+    'RP-CM': {'repair_factory_location': True},
+    'RP-QU': {'repair_factory_location': True},
+    'RP-SC': {'repair_factory_location': True},
+    'RP-EK': {'repair_factory_location': True},
     # BR-* = branch warehouses that receive customer returns
-    'BR-AM': {'x_studio_repair_return_location': True},
-    'BR-AN': {'x_studio_repair_return_location': True},
-    'BR-AV': {'x_studio_repair_return_location': True},
-    'BR-BA': {'x_studio_repair_return_location': True},
-    'BR-BE': {'x_studio_repair_return_location': True},
-    'BR-BU': {'x_studio_repair_return_location': True},
-    'BR-DA': {'x_studio_repair_return_location': True},
-    'BR-EK': {'x_studio_repair_return_location': True},
-    'BR-EM': {'x_studio_repair_return_location': True},
-    'BR-GA': {'x_studio_repair_return_location': True},
-    'BR-GK': {'x_studio_repair_return_location': True},
-    'BR-JF': {'x_studio_repair_return_location': True},
-    'BR-KA': {'x_studio_repair_return_location': True},
-    'BR-KD': {'x_studio_repair_return_location': True},
-    'BR-KU': {'x_studio_repair_return_location': True},
-    'BR-NE': {'x_studio_repair_return_location': True},
-    'BR-TH': {'x_studio_repair_return_location': True},
+    'BR-AM': {'repair_return_location': True},
+    'BR-AN': {'repair_return_location': True},
+    'BR-AV': {'repair_return_location': True},
+    'BR-BA': {'repair_return_location': True},
+    'BR-BE': {'repair_return_location': True},
+    'BR-BU': {'repair_return_location': True},
+    'BR-DA': {'repair_return_location': True},
+    'BR-EK': {'repair_return_location': True},
+    'BR-EM': {'repair_return_location': True},
+    'BR-GA': {'repair_return_location': True},
+    'BR-GK': {'repair_return_location': True},
+    'BR-JF': {'repair_return_location': True},
+    'BR-KA': {'repair_return_location': True},
+    'BR-KD': {'repair_return_location': True},
+    'BR-KU': {'repair_return_location': True},
+    'BR-NE': {'repair_return_location': True},
+    'BR-TH': {'repair_return_location': True},
 }
 
 
@@ -89,8 +89,8 @@ def _has_fix_repair_flags(env):
     field_names = env['ir.model.fields'].sudo().search([
         ('model', '=', 'stock.location'),
         ('name', 'in', [
-            'x_studio_repair_return_location',
-            'x_studio_repair_factory_location',
+            'repair_return_location',
+            'repair_factory_location',
         ]),
     ]).mapped('name')
     return len(field_names) == 2
@@ -309,7 +309,7 @@ def replicate_warehouses_to_all_companies(env):
 
 # Clear-DB → seed-module company id/name → target xmlid.
 # Used by apply_user_data() to translate a snapshot's Clear-DB
-# x_studio_company_id[0] (Clear-DB res.company id) to the target env's
+# accounting_company_id[0] (Clear-DB res.company id) to the target env's
 # res.company via seed xmlid.
 _CLEAR_DB_COMPANY_TO_XMLID = {
     1: 'seed_master_data_and_settings.company_jinasena_pvt_ltd',
@@ -435,24 +435,24 @@ def apply_user_data(env):
                 # the raw base64 for binary fields on write.
                 vals['image_1920'] = u['image_1920']
             # Studio company_id — translate Clear-DB co id → seed xmlid
-            src_company = u.get('x_studio_company_id')
+            src_company = u.get('accounting_company_id')
             if src_company:
                 src_cid = src_company[0]
                 xmlid = _CLEAR_DB_COMPANY_TO_XMLID.get(src_cid)
                 if xmlid:
                     rec = env.ref(xmlid, raise_if_not_found=False)
-                    if rec and hasattr(target, 'x_studio_company_id'):
-                        vals['x_studio_company_id'] = rec.id
+                    if rec and hasattr(target, 'accounting_company_id'):
+                        vals['accounting_company_id'] = rec.id
             # Studio boolean flags
             for bfield in ('x_studio_attendance_administrator',
                            'x_studio_super_user_melt_items'):
                 if bfield in u and hasattr(target, bfield):
                     vals[bfield] = bool(u[bfield])
             # Fix-repair user-side locations (single m2o)
-            for lfield in ('x_studio_source_location',
-                           'x_studio_source_location_1',
-                           'x_studio_virtual_location',
-                           'x_studio_virtual_location_1'):
+            for lfield in ('source_location',
+                           'source_location_1',
+                           'virtual_location',
+                           'virtual_location_1'):
                 lid = _resolve_loc(u.get(lfield))
                 if lid and hasattr(target, lfield):
                     vals[lfield] = lid

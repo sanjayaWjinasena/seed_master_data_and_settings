@@ -10,8 +10,8 @@ env with the same master-data layout as Clear-DB production:
 - **63 warehouses** across the 3 companies (branches, production,
   repair, intransit)
 - **Optional Studio flags** on the auto-created warehouse Stock
-  locations (`x_studio_repair_return_location`,
-  `x_studio_repair_factory_location`, etc.) — applied only when
+  locations (`repair_return_location`,
+  `repair_factory_location`, etc.) — applied only when
   Fix-repair is installed on the target env (guarded in
   `post_init_hook`)
 - **Optional Fix-repair config param** —

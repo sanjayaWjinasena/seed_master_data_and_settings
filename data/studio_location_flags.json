@@ -5,7 +5,7 @@
     "complete_name": "RP-EK/FinishGood",
     "usage": "internal",
     "flags": {
-      "x_studio_finished_good_location": true
+      "finished_good_location": true
     }
   },
   {
@@ -14,7 +14,7 @@
     "complete_name": "PW-E1/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_finished_good_location": true
+      "finished_good_location": true
     }
   },
   {
@@ -23,7 +23,7 @@
     "complete_name": "BR-AM/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_repair_return_location": true
+      "repair_return_location": true
     }
   },
   {
@@ -32,7 +32,7 @@
     "complete_name": "PW-MA/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_finished_good_location": true
+      "finished_good_location": true
     }
   },
   {
@@ -41,7 +41,7 @@
     "complete_name": "PL-EK/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_finished_good_location": true
+      "finished_good_location": true
     }
   },
   {
@@ -50,7 +50,7 @@
     "complete_name": "BR-AN/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_repair_return_location": true
+      "repair_return_location": true
     }
   },
   {
@@ -59,7 +59,7 @@
     "complete_name": "RC-TM/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_repair_return_location": true
+      "repair_return_location": true
     }
   },
   {
@@ -68,7 +68,7 @@
     "complete_name": "MW-EK/FinishGood",
     "usage": "internal",
     "flags": {
-      "x_studio_finished_good_location": true
+      "finished_good_location": true
     }
   },
   {
@@ -77,7 +77,7 @@
     "complete_name": "Temp",
     "usage": "view",
     "flags": {
-      "x_studio_temp_location": true
+      "temp_location": true
     }
   },
   {
@@ -86,7 +86,7 @@
     "complete_name": "MW-JC/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_finished_good_location": true
+      "finished_good_location": true
     }
   },
   {
@@ -95,7 +95,7 @@
     "complete_name": "MW-JC/FinishGood",
     "usage": "internal",
     "flags": {
-      "x_studio_finished_good_location": true
+      "finished_good_location": true
     }
   },
   {
@@ -104,7 +104,7 @@
     "complete_name": "RP-CM/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_repair_factory_location": true
+      "repair_factory_location": true
     }
   },
   {
@@ -113,7 +113,7 @@
     "complete_name": "BR-EK/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_repair_return_location": true
+      "repair_return_location": true
     }
   },
   {
@@ -122,7 +122,7 @@
     "complete_name": "RP-QU/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_repair_return_location": true
+      "repair_return_location": true
     }
   },
   {
@@ -131,7 +131,7 @@
     "complete_name": "PW-JM/Transit",
     "usage": "internal",
     "flags": {
-      "x_studio_temp_location": true
+      "temp_location": true
     }
   },
   {
@@ -140,7 +140,7 @@
     "complete_name": "RP-JM/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_repair_factory_location": true
+      "repair_factory_location": true
     }
   },
   {
@@ -149,7 +149,7 @@
     "complete_name": "BR-EK/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_repair_return_location": true
+      "repair_return_location": true
     }
   },
   {
@@ -158,8 +158,8 @@
     "complete_name": "BR-AM/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_repair_factory_location": true,
-      "x_studio_repair_return_location": true
+      "repair_factory_location": true,
+      "repair_return_location": true
     }
   },
   {
@@ -168,7 +168,7 @@
     "complete_name": "BR-AV/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_repair_return_location": true
+      "repair_return_location": true
     }
   },
   {
@@ -177,7 +177,7 @@
     "complete_name": "BR-NE/Stock",
     "usage": "internal",
     "flags": {
-      "x_studio_repair_return_location": true
+      "repair_return_location": true
     }
   }
 ]
