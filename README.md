@@ -53,3 +53,9 @@ The plaintext temp password (`SEED_TEMP_PASSWORD` in `hooks.py`)
 must never survive a production restore. Rotate the file's
 constant to a fresh random value before shipping, or replace the
 whole seed-passwords hook with an email-invitation flow.
+
+<!-- BEGIN rename-studio-names -->
+## Naming
+
+On 2026-11-11 (branch `Rename-All`) the Studio names in the Jinasena modules were replaced (Studio prefix `x_studio_` / `x_` removed, the repo name as prefix where a name was taken; `x_active` -> `active`). This seeding module only had its references to those names updated; it was not refactored otherwise. The database is renamed by the Jinasena modules' own upgrade scripts.
+<!-- END rename-studio-names -->
