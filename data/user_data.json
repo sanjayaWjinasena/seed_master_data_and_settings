@@ -176,14 +176,14 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [
+      "recr_stages": [
         2
       ],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [
         334
       ],
-      "x_studio_many2many_field_bQRSA": [],
+      "many2many_field_bQRSA": [],
       "source_location": [
         15,
         "Virtual Locations/Production"
@@ -194,7 +194,7 @@
         "Virtual Locations/Repair/Colombo"
       ],
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 8,
@@ -351,13 +351,13 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [
+      "recr_stages": [
         1,
         2,
         5
       ],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [
         527,
         183,
         511,
@@ -365,7 +365,7 @@
         140,
         194
       ],
-      "x_studio_many2many_field_bQRSA": [
+      "many2many_field_bQRSA": [
         527,
         735,
         334,
@@ -387,7 +387,7 @@
         667,
         "Virtual Locations/Repair/Ekala"
       ],
-      "x_studio_super_user_melt_items": true
+      "super_user_melt_items": true
     },
     {
       "id": 24,
@@ -564,16 +564,16 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [
+      "recr_stages": [
         1,
         2,
         5
       ],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [
         5
       ],
-      "x_studio_many2many_field_bQRSA": [
+      "many2many_field_bQRSA": [
         84,
         167,
         334
@@ -588,7 +588,7 @@
         "Virtual Locations/Repair/Ekala"
       ],
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": true
+      "super_user_melt_items": true
     },
     {
       "id": 25,
@@ -739,19 +739,19 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [
+      "recr_stages": [
         1
       ],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [
         158
       ],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 146,
@@ -917,15 +917,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 164,
@@ -1098,7 +1098,7 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [
+      "recr_stages": [
         1,
         2,
         3,
@@ -1108,18 +1108,18 @@
         8,
         9
       ],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [
         140
       ],
-      "x_studio_many2many_field_bQRSA": [
+      "many2many_field_bQRSA": [
         84
       ],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 638,
@@ -1204,17 +1204,17 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [
+      "recr_stages": [
         1,
         2,
         5
       ],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [
         183,
         140
       ],
-      "x_studio_many2many_field_bQRSA": [
+      "many2many_field_bQRSA": [
         334,
         361
       ],
@@ -1234,7 +1234,7 @@
         667,
         "Virtual Locations/Repair/Ekala"
       ],
-      "x_studio_super_user_melt_items": true
+      "super_user_melt_items": true
     },
     {
       "id": 643,
@@ -1314,15 +1314,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": true,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": true,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 723,
@@ -1383,15 +1383,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 724,
@@ -1452,15 +1452,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 725,
@@ -1521,15 +1521,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 726,
@@ -1590,15 +1590,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 727,
@@ -1659,15 +1659,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 728,
@@ -1728,15 +1728,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 729,
@@ -1797,15 +1797,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 730,
@@ -1866,15 +1866,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 731,
@@ -1935,15 +1935,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 732,
@@ -2004,15 +2004,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 733,
@@ -2073,15 +2073,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 734,
@@ -2142,15 +2142,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 735,
@@ -2211,15 +2211,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 736,
@@ -2280,15 +2280,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 737,
@@ -2349,15 +2349,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 738,
@@ -2418,15 +2418,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 739,
@@ -2487,15 +2487,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 740,
@@ -2556,15 +2556,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 741,
@@ -2625,15 +2625,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 742,
@@ -2694,15 +2694,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 743,
@@ -2763,15 +2763,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 744,
@@ -2832,15 +2832,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 745,
@@ -2901,15 +2901,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 746,
@@ -3037,15 +3037,15 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [],
-      "x_studio_many2many_field_bQRSA": [],
+      "recr_stages": [],
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [],
+      "many2many_field_bQRSA": [],
       "source_location": false,
       "source_location_1": false,
       "virtual_location": false,
       "virtual_location_1": false,
-      "x_studio_super_user_melt_items": false
+      "super_user_melt_items": false
     },
     {
       "id": 748,
@@ -3193,19 +3193,19 @@
         2,
         "Jinasena Agricultural Machinery (Pvt) Ltd."
       ],
-      "x_studio_recr_stages": [
+      "recr_stages": [
         1,
         2,
         5
       ],
-      "x_studio_attendance_administrator": false,
-      "x_studio_many2many_field_Q50dg": [
+      "attendance_administrator": false,
+      "many2many_field_Q50dg": [
         527,
         511,
         666,
         194
       ],
-      "x_studio_many2many_field_bQRSA": [
+      "many2many_field_bQRSA": [
         527,
         1017
       ],
@@ -3225,7 +3225,7 @@
         1017,
         "Virtual Locations/Repair/BR-AV"
       ],
-      "x_studio_super_user_melt_items": true
+      "super_user_melt_items": true
     }
   ],
   "groupIdToXmlid": {

@@ -444,8 +444,8 @@ def apply_user_data(env):
                     if rec and hasattr(target, 'accounting_company_id'):
                         vals['accounting_company_id'] = rec.id
             # Studio boolean flags
-            for bfield in ('x_studio_attendance_administrator',
-                           'x_studio_super_user_melt_items'):
+            for bfield in ('attendance_administrator',
+                           'super_user_melt_items'):
                 if bfield in u and hasattr(target, bfield):
                     vals[bfield] = bool(u[bfield])
             # Fix-repair user-side locations (single m2o)
@@ -457,8 +457,8 @@ def apply_user_data(env):
                 if lid and hasattr(target, lfield):
                     vals[lfield] = lid
             # Studio m2m stock.location — resolve list of ids
-            for m2m_field in ('x_studio_many2many_field_Q50dg',
-                              'x_studio_many2many_field_bQRSA'):
+            for m2m_field in ('many2many_field_Q50dg',
+                              'many2many_field_bQRSA'):
                 src_ids = u.get(m2m_field) or []
                 target_ids = [
                     loc_target_ids_by_name.get(
@@ -470,11 +470,11 @@ def apply_user_data(env):
                 if target_ids and hasattr(target, m2m_field):
                     vals[m2m_field] = [(6, 0, target_ids)]
             # Recruitment stages
-            src_stages = u.get('x_studio_recr_stages') or []
+            src_stages = u.get('recr_stages') or []
             stage_ids = [stage_target_ids.get(sid) for sid in src_stages]
             stage_ids = [s for s in stage_ids if s]
-            if stage_ids and hasattr(target, 'x_studio_recr_stages'):
-                vals['x_studio_recr_stages'] = [(6, 0, stage_ids)]
+            if stage_ids and hasattr(target, 'recr_stages'):
+                vals['recr_stages'] = [(6, 0, stage_ids)]
             # groups_id — full replace with resolved target ids
             src_groups = u.get('groups_id') or []
             resolved_groups = [
